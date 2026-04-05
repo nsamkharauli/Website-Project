@@ -1,0 +1,90 @@
+body {
+  font-family: "Caudex", serif;
+}
+
+.header {
+  background-color: rgb(26, 20, 17);
+}
+.header .header_innerbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 25px;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.header .header_innerbox .header_right {
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 55px;
+  margin-right: 12px;
+  margin-left: auto;
+}
+.header .header_innerbox .header_right .header_profile {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.header .header_innerbox .header_right .header_profile:hover .test {
+  opacity: 0.4;
+}
+.header .header_innerbox .header_right .header_profile img {
+  max-width: 30px;
+}
+.header .header_innerbox .header_right .burger_menu {
+  display: none;
+}
+.header .header_innerbox .header_right a {
+  align-content: center;
+  text-decoration: none;
+  color: rgb(255, 251, 250);
+}
+.header .header_innerbox .header_nav .header_menu {
+  display: flex;
+  gap: 23px;
+}
+.header .header_innerbox .header_nav a:hover {
+  text-decoration: underline;
+}
+.header .header_innerbox .header_left img {
+  min-width: 175px;
+}
+.header a {
+  cursor: pointer;
+}
+@media screen and (max-width: 930px) {
+  .header .header_innerbox {
+    padding: 10px 22px;
+  }
+  .header .header_innerbox .header_left img {
+    min-width: 150px;
+  }
+  .header .header_innerbox .header_right .header_nav, .header .header_innerbox .header_right .header_profile {
+    display: none;
+  }
+  .header .header_innerbox .header_right .burger_menu {
+    display: flex;
+    max-width: 40px;
+  }
+  .header .header_innerbox .header_right .burger_menu img {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header .header_innerbox {
+    padding: 10px 22px;
+  }
+  .header .header_innerbox .header_left img {
+    min-width: 127px;
+  }
+  .header .header_innerbox .burger_menu {
+    max-width: 35px;
+  }
+  .header .header_innerbox .burger_menu img {
+    width: 100%;
+    display: block;
+  }
+}/*# sourceMappingURL=Header.css.map */
