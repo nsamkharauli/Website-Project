@@ -1,0 +1,167 @@
+body header {
+  position: sticky;
+  top: 0;
+}
+body header .header_menu a.active {
+  text-decoration: underline !important;
+}
+body .home_layout_1 {
+  background-image: url(../../Images/Home_page/Background_Page_1.avif);
+  background-size: cover;
+  background-position: center;
+  min-height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px 15px;
+  color: white;
+}
+body .home_layout_1 .home_layout_1_top h1 {
+  font-size: 150px;
+}
+body .home_layout_1 .home_layout_1_top p {
+  font-size: 15px;
+}
+body .home_layout_1 .home_layout_1_bottom {
+  align-self: flex-end;
+  padding: 30px;
+}
+body .home_layout_1 .home_layout_1_bottom a {
+  text-decoration: none;
+  color: white;
+}
+body .home_layout_1 .home_layout_1_bottom a:hover {
+  text-decoration: underline;
+}
+body .home_layout_1 .home_layout_1_bottom a {
+  border: 1px solid white;
+  padding: 30px;
+  border-radius: 50%;
+}
+body .home_layout_2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 90px;
+}
+body .home_layout_2 .home_layout_2_top {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 900px;
+}
+body .home_layout_2 .home_layout_2_top p {
+  font-size: 35px;
+}
+body .home_layout_2 .home_layout_2_bottom {
+  align-self: flex-end;
+  padding: 30px;
+  margin-right: 50px;
+}
+body .home_layout_2 .home_layout_2_bottom .home_2 {
+  max-width: 450px;
+}
+body .home_layout_2 .home_layout_2_bottom .home_contact {
+  padding: 10px 40px;
+  background-color: transparent;
+  border: 0.1px solid black;
+  margin-left: 30px;
+  cursor: pointer;
+}
+body .home_layout_2 .home_layout_2_bottom .home_contact:hover {
+  text-decoration: underline;
+}
+body .home_layout_3 {
+  background-color: rgb(95, 75, 68);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+}
+body .home_layout_3 h2 {
+  font-size: 100px;
+}
+body .home_layout_3 .home_service_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  border: 1px solid white;
+  align-self: center;
+  min-width: 700px;
+}
+body .home_layout_3 .home_service_list .service {
+  display: flex;
+  gap: 30px;
+}
+body .home_layout_3 .home_service_list .service p {
+  font-size: 20px;
+}
+body .home_layout_3 .home_service_list .service button {
+  background-color: transparent;
+  color: white;
+  border: 0.5px solid white;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+body .home_layout_3 .home_service_list .service button:hover {
+  text-decoration: underline;
+  background-color: rgb(47, 37, 32);
+  transition-duration: 1s;
+  border: none;
+}
+body .home_layout_4 {
+  background-color: rgb(26, 20, 17);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+body .home_layout_4 h2 {
+  font-size: 100px;
+}
+body .home_layout_4 .home_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+body .home_layout_4 .home_cards h3 {
+  font-size: 25px;
+}
+body .home_layout_4 .home_cards p {
+  max-width: 300px;
+}
+body .home_layout_4 .home_cards img {
+  width: 400px;
+  cursor: pointer;
+}
+body .home_layout_4 a {
+  color: white;
+  align-self: center;
+  padding: 20px 50px;
+  border: 1px solid white;
+  text-decoration: none;
+}
+body .home_layout_4 a:hover {
+  text-decoration: underline;
+}
+body .home_layout_5 {
+  background-image: url(../../Images/Home_page/home_6.avif);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+body .home_layout_5 form {
+  background-color: white;
+  max-width: 500px;
+  min-height: 60vh;
+}
+body .home_layout_5 form .form_row {
+  display: flex;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=Home.css.map */

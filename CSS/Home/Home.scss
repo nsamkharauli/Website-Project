@@ -1,0 +1,220 @@
+$primary-color: rgb(26, 20, 17);
+$secondary-color: rgba(95, 75, 68);
+
+
+
+body{
+  header{
+
+    position: sticky;
+    top: 0; 
+    .header_menu {
+      a.active{
+      text-decoration: underline !important;
+    }
+    }
+  }
+  // Important - ის გარეშე არ გაუსვა ხაზი 
+
+.home_layout_1{
+background-image: url(../../Images/Home_page/Background_Page_1.avif);
+background-size: cover;
+background-position: center;
+min-height: 75vh;
+
+
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px 15px;
+  
+
+  color: white;
+
+.home_layout_1_top{
+  h1{
+    font-size: 150px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+}
+
+.home_layout_1_bottom{
+  align-self: flex-end;
+  padding: 30px;
+
+a{
+  text-decoration: none;
+  color: white;
+&:hover{
+text-decoration: underline;
+}
+
+border: 1px solid white;
+padding: 30px;
+border-radius: 50%;
+}
+}
+
+}
+
+.home_layout_2{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+padding: 20px;
+gap: 90px;
+.home_layout_2_top{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+gap: 50px;
+max-width: 900px;
+p{
+font-size: 35px;
+}
+}
+.home_layout_2_bottom{
+  align-self: flex-end;
+  padding: 30px;
+  margin-right: 50px;
+  .home_2{
+    max-width: 450px;
+  }
+  .home_contact{
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 0.1px solid black;
+    margin-left: 30px;
+    cursor: pointer;
+   &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+}
+
+.home_layout_3{
+background-color: $secondary-color;
+color: white;
+display: flex;
+flex-direction: column;
+gap: 50px;
+padding: 50px;
+
+h2{
+  font-size:100px ;
+}
+.home_service_list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  border: 1px solid white;
+  // align-self: flex-end;
+  align-self: center;
+  min-width: 700px;
+
+  .service{
+    display: flex;
+    gap: 30px;
+
+    p{
+      font-size: 20px;
+    }
+
+    button{
+      background-color: transparent;
+      color: white;
+      border: 0.5px solid white ;
+      padding: 10px 40px;
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+        background-color: rgba(47, 37, 32);
+        transition-duration: 1s;
+        border: none;
+      }
+    }
+  }
+
+}
+
+}
+
+.home_layout_4{
+  background-color: $primary-color;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+ 
+
+  h2{
+    font-size: 100px;
+  }
+
+  .home_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+
+    h3{
+      font-size: 25px;
+    }
+
+    p{
+      max-width: 300px;
+    }
+
+    img{
+      width: 400px;
+      cursor: pointer;
+      
+      // &:hover{
+        
+      // }
+    }
+  }
+   a{
+      color: white;
+      align-self: center;
+      padding: 20px 50px;
+      border: 1px solid white;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    
+}
+
+.home_layout_5{
+  background-image: url(../../Images/Home_page/home_6.avif);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  
+
+  form{
+    background-color: white;
+    max-width: 500px;
+    min-height: 60vh;
+    
+  
+    .form_row{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+  }
+
+}
+
+
+}
