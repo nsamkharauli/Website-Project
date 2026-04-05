@@ -10,9 +10,10 @@ main{
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
+    padding: 30px;
 
     h1{
-      font-size: 100px;
+      font-size: 150px;
     }
 
     .port_cards{
@@ -23,13 +24,24 @@ main{
       
 
      p{
-      max-width: 300px;
+      max-width: 355px;
+      font-size: 18px;
+    }
+  
+    h3{
+      font-size:22px ;
     }
 
     img{
       width: 400px;
       cursor: pointer;
-      
+    }
+
+    .port_port{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 10px;
     }
     }
   
@@ -37,4 +49,33 @@ main{
   }
 
   
+}
+
+@media screen and  (max-width: 965px){
+  
+  main{
+    .portfolio_innerbox{
+     .port_cards{
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      // align-content: center;
+      // justify-content: center;
+
+      p{
+      max-width: 200px;
+      font-size: 12px;
+      }
+  
+      h3{
+      font-size:16px ;
+      }
+  
+
+     .port_port{
+      gap: 60px;
+      }
+  }
+}
+}
 }
