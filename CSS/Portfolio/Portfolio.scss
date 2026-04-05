@@ -1,0 +1,40 @@
+
+
+main{
+  background-color: rgba(95, 75, 68);
+  color: white;
+
+  .portfolio_innerbox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+
+    h1{
+      font-size: 100px;
+    }
+
+    .port_cards{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px;
+      
+
+     p{
+      max-width: 300px;
+    }
+
+    img{
+      width: 400px;
+      cursor: pointer;
+      
+    }
+    }
+  
+
+  }
+
+  
+}

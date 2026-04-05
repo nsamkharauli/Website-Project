@@ -94,21 +94,21 @@ body .home_layout_3 .home_service_list {
   align-self: center;
   min-width: 700px;
 }
-body .home_layout_3 .home_service_list .service {
+body .home_layout_3 .home_service_list .home .service {
   display: flex;
   gap: 30px;
 }
-body .home_layout_3 .home_service_list .service p {
+body .home_layout_3 .home_service_list .home .service p {
   font-size: 20px;
 }
-body .home_layout_3 .home_service_list .service button {
+body .home_layout_3 .home_service_list .home .service button {
   background-color: transparent;
   color: white;
   border: 0.5px solid white;
   padding: 10px 40px;
   cursor: pointer;
 }
-body .home_layout_3 .home_service_list .service button:hover {
+body .home_layout_3 .home_service_list .home .service button:hover {
   text-decoration: underline;
   background-color: rgb(47, 37, 32);
   transition-duration: 1s;
