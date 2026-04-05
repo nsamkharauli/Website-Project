@@ -44,7 +44,14 @@ footer .footer_innerbox .footer_bot .footer_terms ul {
 footer .footer_innerbox a {
   color: rgb(35, 29, 26);
   cursor: pointer;
+  text-decoration: underline;
 }
 footer .footer_innerbox p {
   line-height: 1.5;
+}
+
+@media screen and (max-width: 815px) {
+  .footer_top {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Footer.css.map */

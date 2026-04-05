@@ -1,3 +1,7 @@
+header a.active {
+  text-decoration: underline !important;
+}
+
 main {
   background-color: rgb(95, 75, 68);
   color: white;

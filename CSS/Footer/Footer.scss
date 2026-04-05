@@ -53,10 +53,21 @@ footer{
 a {
   color: rgba(35, 29, 26);
   cursor: pointer;
+  text-decoration: underline;
 }
 p{
   line-height: 1.5;
  }
 
  }
+}
+
+
+@media screen and (max-width: 815px) {
+
+    .footer_top{
+      flex-direction: column;
+    }
+
+  
 }

@@ -1,5 +1,9 @@
 
-
+header{
+   a.active{
+      text-decoration: underline !important;
+    }
+}
 main{
   background-color: rgba(95, 75, 68);
   color: white;
@@ -51,7 +55,7 @@ main{
   
 }
 
-@media screen and  (max-width: 965px){
+@media screen and (max-width: 965px){
   
   main{
     .portfolio_innerbox{
