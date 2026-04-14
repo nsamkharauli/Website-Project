@@ -1,0 +1,73 @@
+@import url(../Font.css);
+body main {
+  background-color: rgb(95, 75, 68);
+  color: white;
+}
+body main .home_hidden_text {
+  display: none;
+}
+body main .service_page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 70px;
+  padding: 80px 20px 20px 20px;
+}
+body main .service_page h1 {
+  font-family: "Moda";
+  font-size: 150px;
+  font-weight: 500;
+  align-self: center;
+}
+body main .service_page .home_service {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px;
+  align-self: flex-end;
+  width: 100%;
+  gap: 50px;
+}
+body main .service_page .home_service .service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 0.7px solid rgba(0, 0, 0, 0.31);
+  padding: 20px 0;
+  width: 100%;
+  align-items: center;
+}
+body main .service_page .home_service .service:last-child {
+  border-bottom: 0.7px solid rgba(0, 0, 0, 0.31);
+  padding: 20px 0 50px 0;
+}
+body main .service_page .home_service h3 {
+  font-size: 25px;
+  flex: 1;
+  cursor: pointer;
+  transition: opacity 250ms ease;
+}
+body main .service_page .home_service h3:hover {
+  opacity: 0.4;
+}
+body main .service_page .home_service p {
+  font-size: 15px;
+  font-weight: 100;
+  min-width: 315px;
+}
+body main .service_page .home_service button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 40px;
+  flex-shrink: 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+body main .service_page .home_service button:hover {
+  text-decoration: underline;
+  background-color: white;
+  color: black;
+  transition-duration: 1s;
+  border: none;
+}/*# sourceMappingURL=Services.css.map */
