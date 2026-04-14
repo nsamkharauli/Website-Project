@@ -1,5 +1,6 @@
 body {
-  font-family: "Caudex", serif;
+  font-family: "Caudex";
+  font-weight: 400;
 }
 
 .header {
@@ -30,8 +31,9 @@ body {
 .header .header_innerbox .header_right .header_profile:hover .test {
   opacity: 0.4;
 }
-.header .header_innerbox .header_right .header_profile img {
-  max-width: 30px;
+.header .header_innerbox .header_right .header_profile svg {
+  max-width: 35px;
+  fill: rgb(255, 251, 250);
 }
 .header .header_innerbox .header_right .burger_menu {
   display: none;
@@ -66,7 +68,13 @@ body {
   }
   .header .header_innerbox .header_right .burger_menu {
     display: flex;
-    max-width: 40px;
+    max-width: 45px;
+    fill: white;
+    background-color: rgb(95, 75, 68);
+    padding: 5px;
+  }
+  .header .header_innerbox .header_right .burger_menu .burg {
+    max-height: 35px;
   }
   .header .header_innerbox .header_right .burger_menu img {
     width: 100%;
@@ -75,7 +83,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .header .header_innerbox {
-    padding: 10px 22px;
+    padding: 10px 8px;
   }
   .header .header_innerbox .header_left img {
     min-width: 127px;

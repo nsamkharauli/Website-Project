@@ -12,19 +12,21 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
 
     h1{
+      padding: 30px;
       font-size: 150px;
     }
 
     .port_cards{
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
-      padding: 40px;
+      gap: 40px;
+      padding: 50px 0px;
+     
       
 
      p{
@@ -36,10 +38,23 @@ main{
       font-size:22px ;
     }
 
-    img{
-      width: 400px;
+    .image_zoom{
+      width: 390px;
       cursor: pointer;
+      display: block;
+      overflow: hidden;
+      img{
+        display: block;
+        max-width: 100%;
+        transition: transform 600ms ease;
+        transform-origin: center;
+        &:hover{
+          transform: scale(1.08);
+        }
+      }
     }
+
+
 
     .port_port{
       display: flex;

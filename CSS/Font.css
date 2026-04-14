@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Caudex";
+  src: url("../../Font/Caudex/Caudex-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caudex";
+  src: url("../../Font/Caudex/Caudex-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caudex";
+  src: url("../../Font/Caudex/Caudex-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Caudex";
+  src: url("../../Font/Caudex/Caudex-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cormorant";
+  src: url("../../Font/Cormorant/static/CormorantGaramond-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant";
+  src: url("../../Font/Cormorant/static/CormorantGaramond-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant";
+  src: url("../../Font/Cormorant/static/Cormorant-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Moda";
+  src: url("../../Font/Bodoni_Moda/static/BodoniModa-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Moda";
+  src: url("../../Font/Bodoni_Moda/static/BodoniModa-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Moda";
+  src: url("../../Font/Bodoni_Moda/static/BodoniModa-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}/*# sourceMappingURL=Font.css.map */

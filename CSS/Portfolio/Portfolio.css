@@ -10,18 +10,19 @@ main .portfolio_innerbox {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
-  padding: 30px;
+  padding: 10px;
 }
 main .portfolio_innerbox h1 {
+  padding: 30px;
   font-size: 150px;
 }
 main .portfolio_innerbox .port_cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 40px;
+  gap: 40px;
+  padding: 50px 0px;
 }
 main .portfolio_innerbox .port_cards p {
   max-width: 355px;
@@ -30,9 +31,20 @@ main .portfolio_innerbox .port_cards p {
 main .portfolio_innerbox .port_cards h3 {
   font-size: 22px;
 }
-main .portfolio_innerbox .port_cards img {
-  width: 400px;
+main .portfolio_innerbox .port_cards .image_zoom {
+  width: 390px;
   cursor: pointer;
+  display: block;
+  overflow: hidden;
+}
+main .portfolio_innerbox .port_cards .image_zoom img {
+  display: block;
+  max-width: 100%;
+  transition: transform 600ms ease;
+  transform-origin: center;
+}
+main .portfolio_innerbox .port_cards .image_zoom img:hover {
+  transform: scale(1.08);
 }
 main .portfolio_innerbox .port_cards .port_port {
   display: flex;
