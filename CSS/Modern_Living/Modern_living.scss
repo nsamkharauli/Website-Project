@@ -7,7 +7,7 @@ $secondary-color: rgba(95, 75, 68);
 body{
   main{
 .modern_living_page{
-  background-color: aliceblue;
+  background-color: rgb(234, 238, 241);
   padding: 70px 5px 0 0;
   h1{
     font-size: 150px;
@@ -124,7 +124,6 @@ p{
 
  
 }
-
 .modern_layout_6{
   padding-bottom: 60px;
 h2{
@@ -171,10 +170,100 @@ button{
 }
 }
 }
+.modern_layout_7{
+  h2{
+  font-size: 70px;
+  font-family: 'Cormorant';
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding: 20px;
+}
 
+.modern_showcase{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+.showcase_item{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  span{
+    font-size: 20px;
+  }
+}
+}
 
 
   }
+.modern_layout_8{
+.modern_consult{
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+.consult_left{
+
+  .consult_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.consult_right{
+  background-color:rgba(204, 194, 189) ;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+
+  h2{
+    font-size: 23px;
+    font-family: 'Moda';
+    max-width: 200px;
+    padding-bottom: 20px;
+  }
+.modern_service{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 0.7px solid rgba(0, 0, 0, 0.31);
+    border-bottom: 0.7px solid rgba(0, 0, 0, 0.31);
+    padding: 40px 0;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+h3{
+  font-size: 20px;
+}
+button{
+  max-width: 170px;
+  background-color: rgba(54, 82, 80);
+  color: white;
+  padding: 8px 25px;
+  border: 1px solid rgba(54, 82, 80);
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+    }
+}
+
+}
+
+}
+
+}
 }
 
 
@@ -254,7 +343,16 @@ button{
   }
 }
 
+.modern_layout_7{
+  .modern_showcase{
+grid-template-columns: 1fr;
+}}
 
+.modern_layout_8{
+  .modern_consult{
+    grid-template-columns: 1fr;
+  }
+}
     }
   }
   
@@ -334,10 +432,38 @@ button{
           font-size: 14px;}}
   }
   }
+.modern_layout_7{
+  h2{
+    font-size: 25px;
+  }
+  .modern_showcase{
+grid-template-columns: 1fr;
+}}
+
+.modern_layout_8{
+  .modern_consult{
+    grid-template-columns: 1fr;
+
+    .consult_right{
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      gap: 20px;
+      h2{
+        font-size: 15px;
+        padding: 12px;
+      }
+    .modern_service{
+      flex-direction: column;
+      }
+    }
+  }
+}
 
 }
 }
 }
+
 
 @media screen and (max-width: 445px){
   body{
