@@ -76,25 +76,23 @@ body{
     margin-right: 20px;
     gap: 30px;
     p{
-      font-size: 15px;
+      font-size: 14px;
     }
   }
 }
-
 .modern_layout_5{
-  
-
 h2{
   font-size: 60px;
   font-family: 'Cormorant';
   font-weight: 500;
   margin-bottom: 15px;
   padding: 20px;
+  padding-top: 70px;
 }
 .workflow_item{
   display: flex;
   gap: 30px;
-  padding: 30px 40px 40px 10px;
+  padding: 30px 100px 60px 10px;
 
 .workflow_right{
   padding:0 40px 0 40px;
@@ -114,7 +112,6 @@ h2{
 
   .workflow_numebr{
     font-size: 25px;
-    flex-shrink: 0;
   }
 
 }
@@ -127,6 +124,55 @@ p{
 
  
 }
+
+.modern_layout_6{
+  padding-bottom: 60px;
+h2{
+  font-size: 70px;
+  font-family: 'Cormorant';
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding: 20px;
+  padding-top: 70px;
+}
+.modern_layout_6_cards{
+  display: flex;
+  gap: 30px;
+  padding-right: 50px;
+.modern_layout_6_card{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px;
+
+.modern_layout_6_title{
+  font-size: 25px;
+}
+.bot_6{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+button{
+  margin-top: 50px;
+  max-width: 170px;
+  background-color: rgba(54, 82, 80);
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid rgba(54, 82, 80);
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+
+
+}
+}
+}
+
+
 
   }
 }
@@ -180,12 +226,17 @@ p{
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
-    padding: 10px 30px 20px 10px;
+    padding: 10px 30px 20px ;
+  
     .workflow_left{
       flex-direction: column;
       .workflow_title{
         font-size: 20px;
+        padding-top: 20px;
       }
+        .workflow_numebr{
+        font-size: 18px;
+       }
     }
     .workflow_right{
       padding: 5px;
@@ -195,6 +246,12 @@ p{
     }
   }
 
+}
+
+.modern_layout_6{
+  .modern_layout_6_cards{
+    flex-direction: column;
+  }
 }
 
 
@@ -260,6 +317,24 @@ p{
     }
   }
 
+  .modern_layout_6{
+    h2{
+  font-size: 50px;}
+  .modern_layout_6_cards{
+    gap: 10px;
+    .modern_layout_6_card{
+      gap: 20px;
+      button{
+        margin-top: 8px;
+        border-radius: 30px;
+      }
+      .modern_layout_6_title{
+        font-size: 18px;}
+        .text_6, .date{
+          font-size: 14px;}}
+  }
+  }
+
 }
 }
 }
@@ -288,6 +363,32 @@ p{
         
         }
       }
+
+  .modern_layout_6{
+    h2{
+  font-size: 30px;
+   margin-bottom: 2px;
+   padding-bottom: 2px;
+   padding-left: 30px;
+  }
+  .modern_layout_6_cards{
+    gap: 10px;
+   align-items: flex-start;
+    .modern_layout_6_card{
+    
+      .modern_layout_6_title{
+        font-size: 14px;}
+        .text_6, .date{
+          font-size: 11px;}
+
+       
+    }
+
+
+  }
+  }
+
+
     }
   }
   
