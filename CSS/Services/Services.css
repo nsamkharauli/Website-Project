@@ -70,4 +70,62 @@ body main .service_page .home_service button:hover {
   color: black;
   transition-duration: 1s;
   border: none;
+}
+
+@media screen and (max-width: 800px) {
+  .service_page .home_hidden_text {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .service_page .our_services {
+    font-size: 120px;
+  }
+  .service_page .home_service {
+    width: 100%;
+    padding: 0;
+  }
+  .service_page .home_service .service {
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 20px;
+  }
+  .service_page .home_service .service h3 {
+    font-size: 20px;
+    align-self: flex-start;
+  }
+  .service_page .home_service .service p, .service_page .home_service .service button {
+    align-self: flex-start;
+  }
+}
+@media screen and (max-width: 685px) {
+  .service_page .our_services {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 400px) {
+  body main .service_page .our_services {
+    font-size: 40px;
+  }
+  body main .service_page .home_service {
+    padding: 0;
+  }
+  body main .service_page .home_service .service {
+    border: none;
+    gap: 15px;
+    text-align: center;
+  }
+  body main .service_page .home_service .service h3 {
+    font-size: 18px;
+    align-self: center;
+  }
+  body main .service_page .home_service .service p {
+    max-width: 205px;
+    font-size: 14px;
+  }
+  body main .service_page .home_service .service button {
+    padding: 8px 30px;
+    font-size: 14px;
+    align-self: center;
+  }
 }/*# sourceMappingURL=Services.css.map */

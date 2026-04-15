@@ -24,7 +24,6 @@ h1{
   font-size: 150px;
   font-weight: 500;
   align-self: center;
-
 }
 
 .home_service{
@@ -91,4 +90,79 @@ h1{
 }
 }
 }
+  @media screen and (max-width: 800px) {
+.service_page{
+  .home_hidden_text{
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+  .our_services{
+    font-size: 120px;
+  }
+  .home_service{
+    width: 100%;
+    padding: 0;
+    
+    .service{
+      flex-direction: column;
+      align-content: flex-start;
+      gap: 20px;
+
+      h3{
+        font-size: 20px;
+        align-self: flex-start;
+      }
+      p, button{
+        align-self: flex-start;
+      }
+    }
+  }
+}
+}
+
+@media screen and (max-width: 685px) {
+.service_page{
+  .our_services{
+    font-size: 90px;
+  }
+}
+}
+
+@media screen and (max-width: 400px) {
+  body{
+    main{
+.service_page{
+  .our_services{
+    font-size: 40px;
+  }
+.home_service{
+  padding: 0;
   
+ 
+  .service{
+    border: none;
+    gap: 15px;
+    text-align: center;
+    h3{
+      font-size: 18px;
+      align-self: center;
+    }
+     p{
+    max-width:205px;
+    font-size: 14px;
+  }
+    
+    
+    button{
+      padding: 8px 30px;
+      font-size: 14px;
+      align-self: center;
+    }
+  }
+
+}
+}
+}
+}
+  }
