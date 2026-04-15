@@ -167,9 +167,11 @@ body .home_layout_4 .home_cards {
 body .home_layout_4 .home_cards h3 {
   font-size: 25px;
   margin: 10px 0;
+  cursor: pointer;
 }
 body .home_layout_4 .home_cards p {
   max-width: 300px;
+  cursor: pointer;
 }
 body .home_layout_4 .home_cards .image_zoom {
   width: 400px;

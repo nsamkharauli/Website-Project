@@ -1,0 +1,168 @@
+@import url(../Font.css);
+body main .modern_living_page {
+  background-color: aliceblue;
+  padding: 70px 5px 0 0;
+}
+body main .modern_living_page h1 {
+  font-size: 150px;
+  font-family: "Moda";
+  margin-top: 10px;
+  max-width: 75%;
+}
+body main .modern_layout_2 {
+  width: 100%;
+}
+body main .modern_layout_2 img {
+  width: 100%;
+  height: auto;
+}
+body main .modern_layout_3 {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+body main .modern_layout_3 .modern_layout_3_top h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+body main .modern_layout_3 .modern_layout_3_bot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+body main .modern_layout_3 .modern_layout_3_bot p {
+  font-size: 20px;
+  max-width: 500px;
+}
+body main .modern_layout_4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+body main .modern_layout_4 .modern_layout_4_left img {
+  width: 100%;
+  height: auto;
+}
+body main .modern_layout_4 .modern_layout_4_right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  gap: 30px;
+}
+body main .modern_layout_4 .modern_layout_4_right p {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1025px) {
+  body main .modern_living_page {
+    padding: 40px 5px 10px 5px;
+  }
+  body main .modern_living_page h1 {
+    font-size: 80px;
+    max-width: 60%;
+  }
+  body main .modern_layout_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  body main .modern_layout_4 .modern_layout_4_right {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 765px) {
+  body main .modern_living_page {
+    padding: 20px 5px 20px 10px;
+  }
+  body main .modern_living_page h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 630px) {
+  body main .modern_living_page {
+    padding-left: 30px;
+  }
+  body main .modern_living_page h1 {
+    font-size: 40px;
+  }
+  body main .modern_living_page .modern_layout_2 {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+  }
+  body main .modern_living_page .modern_layout_2 img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  body main .modern_layout_3 {
+    padding: 15px;
+  }
+  body main .modern_layout_3 .modern_layout_3_top {
+    gap: 10px;
+  }
+  body main .modern_layout_3 .modern_layout_3_top h2 {
+    font-size: 15px;
+  }
+  body main .modern_layout_3 .modern_layout_3_bot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    margin-top: 5px;
+  }
+  body main .modern_layout_3 .modern_layout_3_bot p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  body main .modern_layout_3 .modern_layout_3_bot img {
+    width: 50%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  body main .modern_layout_4 {
+    gap: 10px;
+  }
+  body main .modern_layout_4 .modern_layout_4_right {
+    gap: 10px;
+  }
+  body main .modern_layout_4 .modern_layout_4_right p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 445px) {
+  body main .modern_living_page {
+    padding-left: 20px;
+  }
+  body main .modern_living_page h1 {
+    font-size: 30px;
+    max-width: 60%;
+  }
+  body main .modern_layout_2 {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+  }
+  body main .modern_layout_2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}/*# sourceMappingURL=Modern_living.css.map */
