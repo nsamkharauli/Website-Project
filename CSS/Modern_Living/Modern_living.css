@@ -5,7 +5,8 @@ body main .modern_living_page {
 }
 body main .modern_living_page h1 {
   font-size: 150px;
-  font-family: "Moda";
+  font-family: "Cormorant";
+  font-weight: 500;
   margin-top: 10px;
   max-width: 75%;
 }
@@ -58,6 +59,39 @@ body main .modern_layout_4 .modern_layout_4_right {
 body main .modern_layout_4 .modern_layout_4_right p {
   font-size: 15px;
 }
+body main .modern_layout_5 h2 {
+  font-size: 60px;
+  font-family: "Cormorant";
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+body main .modern_layout_5 .workflow_item {
+  display: flex;
+  gap: 30px;
+  padding: 30px 40px 40px 10px;
+}
+body main .modern_layout_5 .workflow_item .workflow_right {
+  padding: 0 40px 0 40px;
+}
+body main .modern_layout_5 .workflow_item .workflow_left {
+  display: flex;
+  gap: 10px;
+}
+body main .modern_layout_5 .workflow_item .workflow_left .workflow_title {
+  font-size: 24px;
+  max-width: 750px;
+  width: 100%;
+}
+body main .modern_layout_5 .workflow_item .workflow_left .workflow_numebr {
+  font-size: 25px;
+  flex-shrink: 0;
+}
+body main .modern_layout_5 .workflow_item p {
+  font-size: 14px;
+  max-width: 485px;
+  line-height: 1.5;
+}
 
 @media screen and (max-width: 1025px) {
   body main .modern_living_page {
@@ -85,6 +119,29 @@ body main .modern_layout_4 .modern_layout_4_right p {
   }
   body main .modern_living_page h1 {
     font-size: 60px;
+  }
+  body main .modern_layout_5 h2 {
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  body main .modern_layout_5 .workflow_item {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 10px 30px 20px 10px;
+  }
+  body main .modern_layout_5 .workflow_item .workflow_left {
+    flex-direction: column;
+  }
+  body main .modern_layout_5 .workflow_item .workflow_left .workflow_title {
+    font-size: 20px;
+  }
+  body main .modern_layout_5 .workflow_item .workflow_right {
+    padding: 5px;
+  }
+  body main .modern_layout_5 .workflow_item .workflow_right p {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 630px) {
