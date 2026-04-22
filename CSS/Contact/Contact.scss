@@ -1,0 +1,332 @@
+
+
+
+@import url(../Font.css);
+
+$primary-color: rgb(38, 27, 22);
+$secondary-color: rgba(95, 75, 68);
+
+@keyframes revealBottom {
+  0%   { clip-path: inset(100% 0% 0% 0%); } 
+  100% { clip-path: inset(0% 0% 0% 0%); }   
+}
+
+@keyframes revealTop {
+  0%   { clip-path: inset(0% 0% 100% 0%); } 
+  100% { clip-path: inset(0% 0% 0% 0%); }   
+}
+
+@keyframes revealLeft {
+  0%   { clip-path: inset(0% 100% 0% 0%); } 
+  100% { clip-path: inset(0% 0% 0% 0%); }   
+}
+
+@keyframes revealRight {
+  0%   { clip-path: inset(0% 0% 0% 100%); } 
+  100% { clip-path: inset(0% 0% 0% 0%); }   
+}
+
+header{
+
+    position: sticky;
+    top: 0; 
+    z-index: 100;
+    .header_menu {
+      a.active{
+      text-decoration: underline !important;
+    }
+    }
+  }
+
+body{
+  main{
+.contact_layout{
+  background-color: $primary-color;
+  padding-bottom: 40px;
+  h2{
+    font-size: 70px ;
+    padding-bottom: 20px;
+    font-family: 'Cormorant';
+    padding: 40px;
+    color: rgb(116, 91, 83);
+    text-align: right;
+  }
+  .contact_bottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+
+    img{
+      border-radius: 50px 0 50px 0;
+      animation: revealBottom 1.5s ease 0.5s forwards;
+      clip-path: inset(100% 0% 0% 0%);
+
+    }
+
+  .contact_text{
+    p{
+      line-height: 1.5;
+      color: rgb(116, 91, 83);
+    }
+    a{
+      color: rgba(120, 71, 39);
+    }
+  }  
+.map{
+  position: relative;
+  width: 100%;
+  padding-bottom: 35%;
+  height: 0;
+  flex: 1 1 300px;
+  
+
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 50px 0 50px;
+    animation: revealTop 1.5s ease 0.9s forwards;
+    clip-path: inset(0% 0% 100% 0%);
+    
+
+  }
+}
+
+
+  }
+}
+
+
+.contact_clients{
+  background-color: $secondary-color;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+
+  h3{
+    color: white;
+    font-size: 50px;
+    font-family: 'Cormorant';
+  }
+
+  .client_card1{
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 800px;
+    
+
+    .contact_client_cards{
+      display: flex;
+      padding: 30px;
+      img{
+        max-width: 200px;
+        width: 100%;
+      }
+
+
+      .client_text{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 30px;
+        justify-content: space-between;
+
+        p{
+          color: white;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .cardR{
+    animation: revealRight 2s ease 2s forwards;
+     clip-path: inset(0% 0% 0% 100%);
+  }
+
+  .cardL{
+     animation: revealLeft 2s ease 2s forwards;
+     clip-path: inset(0% 0% 0% 100%);
+  }
+
+
+}
+.contact_newsletter{
+  background-image: url(../../Images/Modern/pg3_1.avif);
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+ 
+.newsletter{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  max-width: 500px;
+  width: 100%;
+  color: white;
+  border: 1.5px solid white;
+  border-radius: 10px;
+
+  h5{
+    font-size: 25px;
+    font-family: 'Cormorant';
+    text-align: center;
+  }
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+
+  input{
+    background-color: transparent;
+    border: 1px solid white;
+  }
+
+  label{
+    text-align: start;
+  }
+.submit_news{
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 15px;
+  width: 100%;
+
+}
+
+}
+}
+
+}
+
+
+  }
+}
+
+
+@media screen and (max-width: 830px){
+  body{
+    main{
+  .contact_clients{
+    h3{
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+  .client_card1{
+    .contact_client_cards{
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .client_text{
+        gap: 20px;
+
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+    }
+   }
+  }
+}
+}
+
+@media screen and (max-width: 700px){
+  body{
+    main{
+.contact_layout{
+  h2{
+    font-size: 35px ;
+    padding: 20px;
+    text-align: center;
+  }
+  .contact_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+
+  .contact_text{
+    p{
+      line-height: 1.5;
+    }
+    a{
+      color: $secondary-color;
+    }
+  }  
+ 
+
+  }
+ 
+}
+
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body{
+    main{
+      .contact_layout{
+        .contact_bottom{
+          .modern_image_2{
+            max-width: 200px;
+        }
+        .map{
+          padding-bottom: 10%;
+        }
+        }
+
+      }
+  .contact_clients{
+    h3{
+      font-size: 30px;
+    }
+  .client_card1{
+    border-radius: 10px;
+    .contact_client_cards{
+      padding: 10px;
+       img{
+        max-width: 175px;
+      }
+
+      .client_text{
+        padding: 25px 0 10px 0;
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+    }
+   }
+
+  .contact_newsletter {
+    
+  .newsletter {
+    padding: 20px;
+  
+
+    }
+  }
+}
+}
+}

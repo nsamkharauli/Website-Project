@@ -211,6 +211,9 @@ body main .modern_layout_8 .modern_consult .consult_right .modern_service button
 body main .modern_layout_8 .modern_consult .consult_right .modern_service button:hover {
   text-decoration: underline;
 }
+body main .modern_layout_8 .modern_consult .consult_right .modern_service a {
+  color: white;
+}
 
 @media screen and (max-width: 1025px) {
   body main .modern_living_page {

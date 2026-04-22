@@ -1,0 +1,65 @@
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 900px;
+  padding: 80px 0 20px 10px;
+  font-family: "Moda";
+  color: black;
+  line-height: 1.6;
+}
+main h1 {
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 60px;
+}
+main h3 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+main p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+}
+main .disclaimer,
+main .terms,
+main .include {
+  margin-bottom: 60px;
+}
+main .disclaimer p {
+  font-size: 15px;
+  color: #666;
+}
+
+@media screen and (max-width: 830px) {
+  main {
+    max-width: 600px;
+    padding: 20px;
+  }
+  main h1 {
+    font-size: 60px;
+  }
+  main h3 {
+    font-size: 22px;
+  }
+  main p {
+    font-size: 16px;
+    color: #555;
+    max-width: 700px;
+  }
+  main .disclaimer p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    max-width: 400px;
+    padding: 20px;
+  }
+  main h1 {
+    font-size: 50px;
+  }
+}/*# sourceMappingURL=Terms.css.map */

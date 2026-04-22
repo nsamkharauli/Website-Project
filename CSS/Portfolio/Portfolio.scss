@@ -1,100 +1,227 @@
+html {
+  scroll-behavior:smooth; 
+}
+
+@keyframes fadein {
+  0% {opacity: 0; }
+  20% {opacity: 0.4;}
+  50% { opacity: 0.5;}
+  100% {opacity:1;}
+  
+}
+
+@keyframes revealCenter {
+  0%   { clip-path: inset(50% 50%); } 
+  20%   { clip-path: inset(45% 45%); } 
+  100% { clip-path: inset(0% 0%); }
+}
+
 
 header{
    a.active{
       text-decoration: underline !important;
     }
 }
+body{
 main{
+
+
+.portfolio_1{
   background-color: rgba(95, 75, 68);
   color: white;
+  padding-bottom: 20px;
 
   .portfolio_innerbox{
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 50px;
     align-items: center;
     padding: 10px;
+    padding-bottom: 70px;
 
     h1{
       padding: 30px;
       font-size: 150px;
-    }
-
-    .port_cards{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      padding: 50px 0px;
-     
+      animation: revealCenter 1.2s ease 0.8s forwards;
+      clip-path: inset(50% 50%);
       
-
-     p{
-      max-width: 355px;
-      font-size: 18px;
     }
-  
+
+   .home_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px; 
+
+    .card{
+      position: relative;
+      z-index: 0;
+      max-width: 100%;
+      &:hover img {
+     transform: scale(1.08);
+    }
+    }
+    a.modern_link{
+      position: absolute;
+      inset: 0;
+      background-color: transparent;
+      border: none;
+      z-index: 1;
+    }
+    
+
     h3{
-      font-size:22px ;
+      font-size: 25px;
+      margin: 10px 0;
+      cursor: pointer;
     }
 
-    .image_zoom{
-      width: 390px;
+    p{
+      max-width: 300px;
+      cursor: pointer;
+    }
+
+     .image_zoom{
+      max-width: 370px;
       cursor: pointer;
       display: block;
       overflow: hidden;
       img{
         display: block;
         max-width: 100%;
-        transition: transform 600ms ease;
+        transition: transform 800ms ease;
         transform-origin: center;
-        &:hover{
-          transform: scale(1.08);
+    
+      }
+    }
+}
+
+  a{
+      color: white;
+      font-size: 20px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+}
+}
+
+.portfolio_2{
+  background-color: rgb(26, 20, 17);
+  padding: 40px 20px;
+.portfolio_grid{
+  columns: 4;
+  column-gap: 10px;
+
+.grid_item{
+
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 30px;
+
+ img{
+  width: 100%;
+  transition: transform 800ms ease;
+  &:hover{
+    transform: scale(1.05);
+  }
+
+ } 
+ .overlay{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.70);
+  opacity: 0;
+  transition: opacity 500ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ p{
+  color: white;
+  font-size: 20px;
+ }
+  &:hover img{
+    transform: scale(1.05);
+  }
+
+   &:hover .overlay{
+    opacity: 1;
+  }
+}  
+}
+
+}
+
+
+}
+}
+
+
+
+
+
+@media screen and (max-width: 610px){
+  body{
+  main{
+  .portfolio_1{
+
+  .portfolio_innerbox h1{
+      font-size: 100px;
+  }
+}
+
+.portfolio_2{
+   .portfolio_grid{
+    columns: 3;
+  }
+}
+  }
+
+}
+}
+
+@media screen and (max-width: 470px){
+  body{
+  main{
+    .portfolio_1{
+    .portfolio_innerbox{
+      gap: 10px;
+      padding-bottom: 30px;
+      h1{
+        font-size: 50px;
+        align-self: center;
+        padding-bottom: 2px;
+      }
+      .home_cards{
+        gap: 45px;
+        .card{
+          h3{
+            font-size: 19px;
+          }
+          p{
+            font-size: 12px;
+            max-width: 220px;
+          }
         }
       }
-    }
 
-
-
-    .port_port{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      gap: 10px;
-    }
-    }
-  
-
-  }
-
-  
 }
+      
+        }
 
-@media screen and (max-width: 965px){
-  
-  main{
-    .portfolio_innerbox{
-     .port_cards{
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
-      // align-content: center;
-      // justify-content: center;
-
-      p{
-      max-width: 200px;
-      font-size: 12px;
-      }
-  
-      h3{
-      font-size:16px ;
-      }
-  
-
-     .port_port{
-      gap: 60px;
-      }
+  .portfolio_2{
+   .portfolio_grid{
+    columns: 2;
   }
 }
-}
-}
+      }
+    }
+    }
+
+

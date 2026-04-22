@@ -1,0 +1,20 @@
+@import url(../Font.css);
+ :root {
+      --color-bg:             #f2f2f0;  /* light grey page background        */
+      --color-white:          #ffffff;
+      --color-dark:           #1a1a1a;  /* near-black for headings & text    */
+      --color-mid:            #7a7a7a;  /* medium grey for secondary text    */
+      --color-border:         #d0d0d0;  /* separator lines & slot borders    */
+      --color-selected:       #1e3a34;  /* dark green — selected date / time */
+      --color-selected-text:  #ffffff;
+      --color-btn-next-off:   #9e8f82;  /* muted tan  — Next, no slot chosen */
+      --color-btn-next-on:    #1e3a34;  /* dark green — Next, slot chosen    */
+      --color-btn-text:       #ffffff;
+      --color-slot-hover:     #ebebea;  /* subtle hover bg on time slots     */
+
+      --font-heading: 'Moda';
+      --font-body:    'Lato', Arial, sans-serif;
+
+      --radius-slot: 3px;
+      --radius-btn:  2px;
+    }
