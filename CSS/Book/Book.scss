@@ -35,7 +35,7 @@ header{
     .book-page__back:hover { opacity: 0.5; }
     .book-page__back-arrow { font-size: 18px; line-height: 1; }
 
-    /* Hero heading block */
+   
     .book-page__hero { margin-bottom: 48px; }
 
     .book-page__title {
@@ -53,10 +53,6 @@ header{
     }
 
 
-    /* ============================================================
-       BLOCK: booking
-       Two-column outer layout: scheduler (left) + sidebar (right).
-    ============================================================ */
     .booking {
       display: grid;
       grid-template-columns: 1fr 280px;
@@ -65,11 +61,7 @@ header{
     }
 
 
-    /* ============================================================
-       BLOCK: scheduler  (left panel)
-    ============================================================ */
-
-    /* "Select a Date and Time"  |  Time zone: … ▼ */
+   
     .scheduler__header {
       display: flex;
       justify-content: space-between;
@@ -86,10 +78,6 @@ header{
       font-weight: 400;
     }
 
-    /*
-      Timezone picker uses <details>/<summary> — native HTML toggle.
-      No JavaScript needed.
-    */
     .scheduler__timezone {
       font-size: 13px;
       color: var(--color-mid);
@@ -128,7 +116,7 @@ header{
     .scheduler__timezone-option:hover { background: var(--color-slot-hover); }
 
 
-    /* Inner body: calendar (left) + availability panel (right) */
+
     .scheduler__body {
       display: grid;
       grid-template-columns: auto 1fr;
@@ -137,10 +125,7 @@ header{
     }
 
 
-    /* ============================================================
-       BLOCK: calendar
-    ============================================================ */
-
+  
     .calendar__nav {
       display: flex;
       align-items: center;
@@ -167,14 +152,14 @@ header{
       text-align: center;
     }
 
-    /* 7-column grid — one column per weekday */
+
     .calendar__grid {
       display: grid;
       grid-template-columns: repeat(7, 44px);
       row-gap: 2px;
     }
 
-    /* Mon Tue … column headers */
+  
     .calendar__day-name {
       height: 36px;
       display: flex;
@@ -185,12 +170,12 @@ header{
       letter-spacing: 0.02em;
     }
 
-    /* Individual date cell */
+
     .calendar__cell {
       width: 44px;
       height: 44px;
       display: flex;
-      flex-direction: column;   /* stacks number above dot */
+      flex-direction: column;   
       align-items: center;
       justify-content: center;
       font-size: 14px;
@@ -198,16 +183,14 @@ header{
       cursor: pointer;
       border-radius: 50%;
       transition: background 0.15s;
-      text-decoration: none;    /* in case used as <a> or <label> */
+      text-decoration: none;   
     }
     .calendar__cell:hover { background: rgba(0,0,0,0.07); }
 
-    /* Empty spacers before day 1 or after last day of month */
     .calendar__cell--empty {
       pointer-events: none;
     }
 
-    /* Greyed-out past dates / non-available dates */
     .calendar__cell--muted {
       color: var(--color-mid);
       pointer-events: none;
@@ -215,10 +198,7 @@ header{
     }
     .calendar__cell--muted:hover { background: none; }
 
-    /*
-      Small availability dot below the date number.
-      flex-direction: column on .calendar__cell places this below the number.
-    */
+   
     .calendar__dot {
       width: 4px;
       height: 4px;
@@ -230,11 +210,9 @@ header{
 
     .date-radio { display: none; }
 
-    /* Default: show "no availability" state, hide slots */
     .availability__state-a { display: block; }
     .availability__state-b { display: none;  }
 
-    /* When an available date radio is checked → swap the panels */
     #date-20:checked ~ .scheduler__body .availability__state-a,
     #date-21:checked ~ .scheduler__body .availability__state-a,
     #date-22:checked ~ .scheduler__body .availability__state-a,
@@ -255,7 +233,6 @@ header{
     #date-29:checked ~ .scheduler__body .availability__state-b,
     #date-30:checked ~ .scheduler__body .availability__state-b { display: block; }
 
-    /* Highlight the selected calendar cell with the dark green circle */
     #date-20:checked ~ .scheduler__body .calendar__cell--d20,
     #date-21:checked ~ .scheduler__body .calendar__cell--d21,
     #date-22:checked ~ .scheduler__body .calendar__cell--d22,
@@ -270,7 +247,6 @@ header{
       font-weight: 500;
     }
 
-    /* Switch availability heading text per selected date */
     .availability__heading-text { display: none; }
 
     .availability__heading-text--default { display: inline; }
@@ -296,25 +272,21 @@ header{
     #date-30:checked ~ .scheduler__body .availability__heading-text--d30 { display: inline; }
 
 
-        /* ============================================================
-       BLOCK: availability
-    ============================================================ */
-
-    /* "Availability for Monday, 20 April" */
+   
     .availability__heading {
       font-size: 15px;
       font-weight: 400;
       margin-bottom: 6px;
     }
 
-    /* "No availability" shown in state A */
+
     .availability__status {
       font-size: 14px;
       color: var(--color-mid);
       margin-bottom: 28px;
     }
 
-    /* "Check Next Availability" CTA button — state A */
+
     .availability__cta-btn {
       display: block;
       width: 100%;
@@ -331,10 +303,7 @@ header{
     }
     .availability__cta-btn:hover { opacity: 0.82; }
 
-    /*
-      Time-slot grid — 3 equal columns.
-      Shown in state B (when an available date is selected).
-    */
+   
     .availability__slots {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -342,17 +311,7 @@ header{
       margin-top: 16px;
     }
 
-    /*
-      ──────────────────────────────────────────────────────────────
-      PURE CSS TIME-SLOT SELECTION  (no JavaScript)
-      ──────────────────────────────────────────────────────────────
-      Each slot = hidden <input type="radio"> + visible <label>.
-      All radios share name="timeslot" → only one active at a time.
-
-      Clicking a label checks its linked radio.
-      CSS  .slot__radio:checked + .slot__label  styles it as selected.
-      ──────────────────────────────────────────────────────────────
-    */
+    
     .slot__radio { display: none; }
 
     .slot__label {
@@ -371,7 +330,7 @@ header{
     }
     .slot__label:hover { background: var(--color-slot-hover); }
 
-    /* Selected slot — dark green fill */
+    
     .slot__radio:checked + .slot__label {
       background: var(--color-selected);
       color: var(--color-selected-text);
@@ -379,10 +338,7 @@ header{
     }
 
 
-    /* ============================================================
-       BLOCK: service-details  (right sidebar)
-    ============================================================ */
-
+   
     .service-details__title {
       font-family: var(--font-heading);
       font-size: clamp(18px, 2vw, 22px);
@@ -398,11 +354,7 @@ header{
       margin-bottom: 10px;
     }
 
-    /*
-      Pure CSS accordion — "More details ▼"
-      Hidden checkbox keeps the open/closed state.
-      <label> is the clickable area; clicking it toggles the checkbox.
-    */
+   
     .service-details__toggle { display: none; }
 
     .service-details__more {
@@ -438,14 +390,7 @@ header{
       transform: rotate(180deg);
     }
 
-    /*
-      Next button — two visual states:
-        --off  muted tan    default (no time slot chosen)
-        --on   dark green   active  (a time slot has been chosen)
-
-      CSS :has() detects whether any .slot__radio inside .booking is checked.
-      :has() is supported in all modern browsers since 2023.
-    */
+ 
     .service-details__next-btn {
       display: block;
       width: 100%;
@@ -463,13 +408,13 @@ header{
 
     .service-details__next-btn--off { background: var(--color-btn-next-off); }
 
-    /* "On" version hidden by default */
+   
     .service-details__next-btn--on  {
       background: var(--color-btn-next-on);
       display: none;
     }
 
-    /* :has() — when any time slot is chosen, swap the buttons */
+    
     .booking:has(.slot__radio:checked) .service-details__next-btn--off { display: none;  }
     .booking:has(.slot__radio:checked) .service-details__next-btn--on  { display: block; }
 
